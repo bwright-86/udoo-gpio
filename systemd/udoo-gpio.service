@@ -1,0 +1,10 @@
+[Unit]
+Description=Activate udoo gpio pins
+
+[Service]
+ExecStart=/bin/sh /etc/systemd/scripts/gpio.sh
+Type=forking
+User=root
+
+[Install]
+WantedBy=multi-user.target
