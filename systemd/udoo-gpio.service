@@ -2,7 +2,7 @@
 Description=Activate udoo gpio pins
 
 [Service]
-ExecStart=/bin/sh /etc/systemd/scripts/gpio.sh
+ExecStart=/bin/sh /etc/systemd/scripts/udoo-gpio/udoo-gpio.sh
 Type=forking
 User=root
 
